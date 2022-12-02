@@ -58,13 +58,3 @@ for (i in 1:length(advent)) {
   wanted_outcome <- substr(advent[i], 3, 3)
   score <- score + outcome2(elf_hand, wanted_outcome)
 }
-
-score <- 0
-for (i in 1:length(test)) {
-  elf_hand <- substr(test[i], 1, 1)
-  print(elf_hand)
-  wanted_outcome <- substr(test[i], 3, 3)
-  print(wanted_outcome)
-  score <- score + outcome2(elf_hand, wanted_outcome)
-  print(score)
-}
